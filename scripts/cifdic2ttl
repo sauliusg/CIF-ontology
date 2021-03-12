@@ -2,7 +2,7 @@
 #*
 # Extract essential data item descriptions (names, definitions) from
 # DDLm dictionaries and write them out in .ttl format for inclusion
-# into EMMO ontologies.
+# into EMMO or other OWL ontologies.
 #**
 
 use strict;
@@ -20,12 +20,28 @@ use Data::Dumper;
 
 my $Id = '$Id 0.1.0$';
 
+my $debug = 0;
+
+my $parent_class; # Parent class ID in the OWL ontology
+my $cif_category; # CIF category to process
+
 #* OPTIONS:
+#* --category cell
+#*      Specify CIF category to process.
 #*
+#* --parent-class 18f45d3a-8354-11eb-8ca6-57869d351dfa
+#*      Which OWL parent class should the category items be added to.
+#*
+#* --debug          Activate debug outputs
+#* --no-debug       No debug outputs
 #* --version        Print version number and exit
 #* --help, --usage  Print a short usage message (this message) and exit.
 #**
 @ARGV = getOptions(
+    "--debug" => sub { $debug = 1 },
+    "--no-debug,--dont-debug" => sub { $debug = 0 },
+    "--category" => \$cif_category,
+    "--parent-class" => \$parent_class,
     "--version" => sub {
         $Id =~ s/^\$|\$$//g;
         print $Id, "\n";
@@ -43,13 +59,15 @@ for my $file (@ARGV) {
                 ##print ">>> ==== $save_block->{name} ====\n";
                 ##print Dumper $save_block;
                 my @block_data = traverse_save_block( $save_block );
-                for my $block_data (@block_data) {
-                    my @keys = sort keys %$block_data;
-                    for my $key (@keys) {
-                        print "$key: $block_data->{$key}\n";
+                do {
+                    for my $block_data (@block_data) {
+                        my @keys = sort keys %$block_data;
+                        for my $key (@keys) {
+                            print "$key: $block_data->{$key}\n";
+                        }
+                        print "\n";
                     }
-                    print "\n";
-                }
+                } if $debug;
             }
         }
     } else {
