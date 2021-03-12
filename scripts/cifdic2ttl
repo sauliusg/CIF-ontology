@@ -25,7 +25,14 @@ my $debug = 0;
 my $parent_class = 'a807a946_94bb_4cba_a433_31daf1d0a94c'; # Parent class ID in the OWL ontology
 my $cif_category = 'cell'; # CIF category to process
 
+my $skos_pref_label = '<http://www.w3.org/2004/02/skos/core#prefLabel>';
+my $rdfs_label = $skos_pref_label;
+
 #* OPTIONS:
+#* --use-rdfs-label
+#* --use-skos-pref-label
+#*      Specify which type of labels to use in the output.
+#*
 #* --category cell
 #*      Specify CIF category to process.
 #*
@@ -38,10 +45,12 @@ my $cif_category = 'cell'; # CIF category to process
 #* --help, --usage  Print a short usage message (this message) and exit.
 #**
 @ARGV = getOptions(
-    "--debug" => sub { $debug = 1 },
+    "--use-rdfs-label"        => sub { $rdfs_label = 'rdfs:label' },
+    "--use-skos-pref-label"   => sub { $rdfs_label = $skos_pref_label },
+    "--debug"                 => sub { $debug = 1 },
     "--no-debug,--dont-debug" => sub { $debug = 0 },
-    "--category" => \$cif_category,
-    "--parent-class" => \$parent_class,
+    "--category"              => \$cif_category,
+    "--parent-class"          => \$parent_class,
     "--version" => sub {
         $Id =~ s/^\$|\$$//g;
         print $Id, "\n";
@@ -79,7 +88,7 @@ for my $file (@ARGV) {
                         print "### http://emmo.info/emmo/cif#OWLClass_${uuid}";
                         print ":OWLClass_${uuid} rdf:type owl:Class ;";
                         print "${spaces}rdfs:subClassOf :OWLClass_${parent_class} ;";
-                        print "${spaces}rdfs:label \"$block_data->{definition}\"\@en .";
+                        print "${spaces}$rdfs_label \"$block_data->{definition}\"\@en .";
                         print "";
                     }
                 }
