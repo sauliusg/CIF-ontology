@@ -1,0 +1,31 @@
+  654  ( set -x; directory-metadata; git remote -v; tdbgrep '_name.category_id\s+cell\s*$' ~/src/IUCr/COMCIFS/cif_core/cif_core.dic | grep '_name\.object_id' | awk '{print $2}' | sort -u | grep -vE '^(angle_(alpha|beta|gamma)|length_[abc])$' | while read NAME; do ( UUID=$(uuidgen); SPACES=$(perl -e 'print " "x43'); echo -e "### http://emmo.info/emmo/cif#OWLClass_${UUID}\n:OWLClass_${UUID} rdf:type owl:Class ;\n${SPACES}rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;\n${SPACES}rdfs:label \"cell_${NAME}\"@en .\n" ) done > cif_cell_classes.ttl ) &> cif_cell_classes.ttl.log
+  655  less cif_cell_classes.ttl
+  656  cat cif_cell_classes.ttl >> cif.ttl 
+  657  protege &> /dev/null &
+  658  protege &> /dev/null &
+  659  git status
+  660  git add cif_cell_classes.ttl*
+  661  git status
+  662  git commit 
+  663  git status
+  664  git checkout cif.ttl
+  665  git status
+  666  cat cif_cell_classes.ttl >> cif.ttl 
+  667  git diff
+  668  git status
+  669  git commit -a
+  670  bg
+  671  h
+  672  ll
+  673  git status
+  674  ll
+  675  source ~/.bashrc
+  676  protege &> /dev/null &
+  677  git status
+  678  ll
+  679  git push
+  680  ll
+  681  cat cif_cell_classes.ttl.log
+  682  cat cif_cell_classes.ttl.log | less
+  683  less cif.ttl 
+  684  protege &> /dev/null &
