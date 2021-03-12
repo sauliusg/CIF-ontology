@@ -1,0 +1,25 @@
++ directory-metadata
++ whoami
+saulius
++ hostname -f
+starta
++ pwd
+/home/saulius/src/domain-crystallography
++ svn info
+svn: E155007: '/home/saulius/src/domain-crystallography' is not a working copy
++ df -h .
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/nvme1n1p1  938G  250G  641G  29% /home
++ type osname
+osname is /home/saulius/scripts/osname
++ osname
+Linuxmint-20.1
++ uname -a
+Linux starta 5.8.0-44-generic #50~20.04.1-Ubuntu SMP Wed Feb 10 21:07:30 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
++ date
+2021-03-12T11:57:55 EET
++ git remote -v
+origin	git@github.com:sauliusg/domain-crystallography.git (fetch)
+origin	git@github.com:sauliusg/domain-crystallography.git (push)
++ history
++ awk '/^ *654/,/^ *684/'
