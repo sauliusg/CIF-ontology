@@ -28,6 +28,8 @@ my $cif_category = 'cell'; # CIF category to process
 my $skos_pref_label = '<http://www.w3.org/2004/02/skos/core#prefLabel>';
 my $rdfs_label = $skos_pref_label;
 
+my $description_name = 'emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9';
+
 #* OPTIONS:
 #* --use-rdfs-label
 #* --use-skos-pref-label
@@ -88,6 +90,16 @@ for my $file (@ARGV) {
                         print "### http://emmo.info/emmo/cif#OWLClass_${uuid}";
                         print ":OWLClass_${uuid} rdf:type owl:Class ;";
                         print "${spaces}rdfs:subClassOf :OWLClass_${parent_class} ;";
+                        if( exists $block_data->{description} ) {
+                            $block_data->{description} =~ s/"/''/g;
+                            if( $block_data->{description} =~ /\n/ ) {
+                                print "${spaces}$description_name " .
+                                    "\"\"\"$block_data->{description}\"\"\" ;";
+                            } else {
+                                print "${spaces}$description_name " .
+                                    "\"$block_data->{description}\" ;";
+                            }
+                        }
                         print "${spaces}$rdfs_label \"$block_data->{definition}\"\@en .";
                         print "";
                     }
@@ -133,9 +145,11 @@ sub traverse_save_block
             $block_data{$name} = $save_block->{values}{$key}[0];
         }
 
-        if( $name eq 'description' && exists $block_data{$name} ) {
-            $block_data{$name} =~ s/\s+/ /g;
-            $block_data{$name} =~ s/^\s*|\s$//g;
+        if( 1 ) {
+            if( $name eq 'description' && exists $block_data{$name} ) {
+                $block_data{$name} =~ s/\s+/ /g;
+                $block_data{$name} =~ s/^\s*|\s$//g;
+            }
         }
     }
 
