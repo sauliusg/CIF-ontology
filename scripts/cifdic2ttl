@@ -1,0 +1,22 @@
+#!/usr/bin/perl
+
+#*
+# Extract essential data item descriptions (names, definitions) from
+# DDLm dictionaries and write them out in .ttl format for inclusion
+# into EMMO ontologies.
+#**
+
+use strict;
+use warnings;
+
+use COD::CIF::Parser qw( parse_cif );
+use Data::Dumper;
+
+for my $file (@ARGV) {
+    my ($cif, $err_count, $messages) = parse_cif( $file );
+    if( $err_count == 0 ) {
+        print Dumper $cif;
+    } else {
+        die join( "\n", @$messages );
+    }
+}
