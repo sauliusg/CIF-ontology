@@ -145,7 +145,7 @@ sub traverse_save_block
             $block_data{$name} = $save_block->{values}{$key}[0];
         }
 
-        if( 1 ) {
+        if( 0 ) {
             if( $name eq 'description' && exists $block_data{$name} ) {
                 $block_data{$name} =~ s/\s+/ /g;
                 $block_data{$name} =~ s/^\s*|\s$//g;
