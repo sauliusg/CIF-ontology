@@ -40,8 +40,16 @@ for my $file (@ARGV) {
         for my $data_block (@$cif) {
             my $save_blocks = $data_block->{save_blocks};
             for my $save_block (@$save_blocks) {
-                print ">>> ==== $save_block->{name} ====\n";
-                print Dumper $save_block;
+                ##print ">>> ==== $save_block->{name} ====\n";
+                ##print Dumper $save_block;
+                my @block_data = traverse_save_block( $save_block );
+                for my $block_data (@block_data) {
+                    my @keys = sort keys %$block_data;
+                    for my $key (@keys) {
+                        print "$key: $block_data->{$key}\n";
+                    }
+                    print "\n";
+                }
             }
         }
     } else {
@@ -68,8 +76,26 @@ sub traverse_save_block
 {
     my ($save_block) = @_;
 
-    my $name;
-    if( exists $save_block->{tags}{'_name.category_id'} ) {
-        $name = $save_block->{tags}{'_name.category_id'};
+    my %block_data;
+
+    for my $key (qw(_name.category_id _name.object_id _definition.id 
+                    _alias.definition_id _description.text)) {
+        my $name = $key;
+        $name =~ s/(\.|_)id$//;
+        $name =~ s/^_name\./_/;
+        if( $name =~ /_([a-z]+)/ ) {
+            $name = $1;
+        }
+
+        if( exists $save_block->{values}{$key} ) {
+            $block_data{$name} = $save_block->{values}{$key}[0];
+        }
+
+        if( $name eq 'description' ) {
+            $block_data{$name} =~ s/\s+/ /g;
+            $block_data{$name} =~ s/^\s*|\s$//g;
+        }
     }
+
+    return ( \%block_data );
 }
