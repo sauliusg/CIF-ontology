@@ -1,5 +1,4 @@
 #!/usr/bin/perl
-
 #*
 # Extract essential data item descriptions (names, definitions) from
 # DDLm dictionaries and write them out in .ttl format for inclusion
@@ -9,14 +8,68 @@
 use strict;
 use warnings;
 
+use FindBin qw($Bin);
+use lib "$Bin/lib/perl5/cif2ttl";
+use lib "$Bin/../lib/perl5/cif2ttl";
+
+use SOptions qw( getOptions );
+use SUsage qw( usage );
+
 use COD::CIF::Parser qw( parse_cif );
 use Data::Dumper;
+
+my $Id = '$Id 0.1.0$';
+
+#* OPTIONS:
+#*
+#* --version        Print version number and exit
+#* --help, --usage  Print a short usage message (this message) and exit.
+#**
+@ARGV = getOptions(
+    "--version" => sub {
+        $Id =~ s/^\$|\$$//g;
+        print $Id, "\n";
+        print &get_version_string, "\n"; exit; },
+    "--help,--usage" => sub { SUsage::usage(); exit; }
+);
 
 for my $file (@ARGV) {
     my ($cif, $err_count, $messages) = parse_cif( $file );
     if( $err_count == 0 ) {
-        print Dumper $cif;
+        ## print Dumper $cif;
+        for my $data_block (@$cif) {
+            my $save_blocks = $data_block->{save_blocks};
+            for my $save_block (@$save_blocks) {
+                print ">>> ==== $save_block->{name} ====\n";
+                print Dumper $save_block;
+            }
+        }
     } else {
         die join( "\n", @$messages );
+    }
+}
+
+# Traverse CIF save blocks as returned from the CIF::COD::Parser,
+# extract information necessary for Turtle file formation and return
+# that information as a plain hash.
+#
+# Arguments:
+#
+#    $save_block: The root save_ block to be traversed; the traversal
+#          function DOES NOT yet descend recursively into save_ blocks
+#          stored inside.
+#
+# Returns:
+#    $data_hash => {
+#        category => 'category name',
+#    }
+
+sub traverse_save_block
+{
+    my ($save_block) = @_;
+
+    my $name;
+    if( exists $save_block->{tags}{'_name.category_id'} ) {
+        $name = $save_block->{tags}{'_name.category_id'};
     }
 }
