@@ -4,6 +4,7 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix emmo: <http://emmo.info/emmo#> .
 @base <http://emmo.info/emmo/cif> .
 
 <http://emmo.info/emmo/cif> rdf:type owl:Ontology ;
@@ -623,4 +624,3 @@
 :OWLClass_df51cc0d-8f2c-4b7a-b83a-ee2e322d78cf rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.vector_c"@en .
-
