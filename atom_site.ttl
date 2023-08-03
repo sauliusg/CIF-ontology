@@ -1,0 +1,325 @@
+@prefix isq: <http://emmo.info/emmo/middle/isq#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix emmo: <http://emmo.info/emmo#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <http://emmo.info/crystallography/crystallography> .
+
+### http://emmo.info/emmo/cif#OWLClass_9c57fc5f-fc0a-4c7f-952f-e8f5824b49a3
+:OWLClass_9c57fc5f-fc0a-4c7f-952f-e8f5824b49a3 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Code for type of atomic displacement parameters used for the site." ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.ADP_type"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_b99e6842-648d-4f79-bec5-68d388e7f1fb
+:OWLClass_b99e6842-648d-4f79-bec5-68d388e7f1fb rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Number of hydrogen atoms attached to the atom at this site excluding any H atoms for which coordinates (measured or calculated) are given." ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.attached_hydrogens"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_69f6da52-2942-4e27-aa2a-405bdb465799
+:OWLClass_69f6da52-2942-4e27-aa2a-405bdb465799 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """Equivalent isotropic atomic displacement parameter, B(equiv), in angstroms squared, calculated as the geometric mean of the anisotropic atomic displacement parameters.
+
+B(equiv) = (B~i~ B~j~ B~k~)^1/3^
+
+B~n~ = the principal components of the orthogonalised B^ij^
+
+The IUCr Commission on Nomenclature recommends against the use of B for reporting atomic displacement parameters. U, being directly proportional to B, is preferred.""" ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.B_equiv_geom_mean"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_898e76e2-9f14-4cca-9a36-b0617968934c
+:OWLClass_898e76e2-9f14-4cca-9a36-b0617968934c rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Standard uncertainty of the equivalent isotropic atomic displacement parameter, B(equiv), in angstroms squared, calculated as the geometric mean of the anisotropic atomic displacement parameters." ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.B_equiv_geom_mean_su"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_2de70ce2-d964-480a-aada-8966a9532f69
+:OWLClass_2de70ce2-d964-480a-aada-8966a9532f69 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """Isotropic atomic displacement parameter, or equivalent isotropic atomic displacement parameter, B(equiv), in angstroms squared, calculated from anisotropic atomic displacement parameters.
+
+B(equiv) = (1/3) sum~i~[sum~j~(B^ij^ a*~i~ a*~j~ a~i~.a~j~)]
+
+a = the real-space cell vectors a* = the reciprocal-space cell lengths B^ij^ = 8 π^2^ U^ij^ Ref: Fischer, R. X. & Tillmanns, E. (1988). Acta Cryst. C44, 775-776.
+
+The IUCr Commission on Nomenclature recommends against the use of B for reporting atomic displacement parameters. U, being directly proportional to B, is preferred.""" ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.B_iso_or_equiv"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_dcc5a4b0-29e8-4e3a-9067-d127f85bd653
+:OWLClass_dcc5a4b0-29e8-4e3a-9067-d127f85bd653 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Standard uncertainty of the isotropic atomic displacement parameter, or equivalent isotropic atomic displacement parameter, B(equiv), in angstroms squared, calculated from anisotropic atomic displacement parameters." ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.B_iso_or_equiv_su"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_94f929e0-8e26-46b8-82cb-1f4537a879d9
+:OWLClass_94f929e0-8e26-46b8-82cb-1f4537a879d9 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The _atom_site.label of the atom site to which the 'geometry-calculated' atom site is attached." ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.calc_attached_atom"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_2405a9e9-8c08-4389-92b6-3a8634c88a4f
+:OWLClass_2405a9e9-8c08-4389-92b6-3a8634c88a4f rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A standard code to signal if the site coordinates have been determined from the intensities or calculated from the geometry of surrounding sites, or have been assigned dummy coordinates." ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.calc_flag"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_554e2469-85d7-4fb6-ab7b-95edfacaa026
+:OWLClass_554e2469-85d7-4fb6-ab7b-95edfacaa026 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.Cartn_x"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_0b94b2d7-777f-40c8-b0dd-84034fe8757f
+:OWLClass_0b94b2d7-777f-40c8-b0dd-84034fe8757f rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.Cartn_x_su"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_b1495e1c-9602-4f5a-a888-b02646d6b61c
+:OWLClass_b1495e1c-9602-4f5a-a888-b02646d6b61c rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Vector of Cartesian (orthogonal angstrom) atom site coordinates." ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.Cartn_xyz"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_935c2cc2-cdf0-4f25-810a-4cc4b22fa571
+:OWLClass_935c2cc2-cdf0-4f25-810a-4cc4b22fa571 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Standard uncertainty of _atom_site.Cartn_xyz." ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.Cartn_xyz_su"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_82b54c15-cdaf-4c08-83e7-8701a00961a5
+:OWLClass_82b54c15-cdaf-4c08-83e7-8701a00961a5 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.Cartn_y"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_c93ff6b6-9546-482a-961f-9ecc3fb96dc9
+:OWLClass_c93ff6b6-9546-482a-961f-9ecc3fb96dc9 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.Cartn_y_su"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_7a779f21-8c2f-44fb-bf82-ce98df2cbbbc
+:OWLClass_7a779f21-8c2f-44fb-bf82-ce98df2cbbbc rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.Cartn_z"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_5e49e9ce-8c71-472a-a25d-fc67243b84c0
+:OWLClass_5e49e9ce-8c71-472a-a25d-fc67243b84c0 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.Cartn_z_su"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_83509e80-af47-4782-ae4a-1c5bea352b2c
+:OWLClass_83509e80-af47-4782-ae4a-1c5bea352b2c rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "This number links an atom site to the chemical connectivity list. It must match a number specified by _chemical_conn_atom.number." ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.chemical_conn_number"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_a60df0b5-d7bd-48d0-a0cb-6817b1e095eb
+:OWLClass_a60df0b5-d7bd-48d0-a0cb-6817b1e095eb rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A description of the constraints applied to parameters at this site during refinement. See also _atom_site.refinement_flags_* and _refine_ls.number_constraints." ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.constraints"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_fcaa51ad-e5d7-43f1-a933-db885ae83a35
+:OWLClass_fcaa51ad-e5d7-43f1-a933-db885ae83a35 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A description of special aspects of this site. See also _atom_site.refinement_flags_*." ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.description"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_0e3c4ed1-f16d-4dfd-b706-42cdd93c7e16
+:OWLClass_0e3c4ed1-f16d-4dfd-b706-42cdd93c7e16 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A code which identifies a cluster of atoms that show long range disorder but are locally ordered. Within each such cluster of atoms, _atom_site.disorder_group is used to identify the sites that are simultaneously occupied. This field is only needed if there is more than one cluster of disordered atoms showing independent local order." ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.disorder_assembly"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_e5400509-8114-4eab-8697-5e3e8b10b8ca
+:OWLClass_e5400509-8114-4eab-8697-5e3e8b10b8ca rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A code that identifies a group of disordered atom sites that are locally simultaneously occupied. Atoms that are positionally disordered over two or more sites (e.g. the H atoms of a methyl group that exists in two orientations) should be assigned to two or more groups. Similarly, atoms that describe a specific alternative composition of a compositionally disordered site should be assigned to a distinct disorder group (e.g. a site that is partially occupied by Mg and Mn atoms should be described by assigning the Mg atom to one group and the Mn atom to another group). Sites belonging to the same group are simultaneously occupied, but those belonging to different groups are not. A minus prefix (e.g. ''-1'') is used to indicate sites disordered about a special position." ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.disorder_group"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_3c3d2fd7-21d3-476f-bfe0-42619384289d
+:OWLClass_3c3d2fd7-21d3-476f-bfe0-42619384289d rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.fract_x"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_b44442a0-83c7-4026-93b9-8ef122d84298
+:OWLClass_b44442a0-83c7-4026-93b9-8ef122d84298 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.fract_x_su"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_a695f955-389f-4be3-b7ba-9bb3e40a7e19
+:OWLClass_a695f955-389f-4be3-b7ba-9bb3e40a7e19 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Vector of atom site coordinates projected onto the crystal unit cell as fractions of the cell lengths." ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.fract_xyz"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_9bcbb0af-6abc-4f5f-aa24-2907e4652213
+:OWLClass_9bcbb0af-6abc-4f5f-aa24-2907e4652213 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Standard uncertainty of _atom_site.fract_xyz." ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.fract_xyz_su"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_6cbd416c-9e75-4a0d-91aa-6c0e7514fb84
+:OWLClass_6cbd416c-9e75-4a0d-91aa-6c0e7514fb84 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.fract_y"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_be45cf6f-711e-46b8-8a1c-d481d1ccac30
+:OWLClass_be45cf6f-711e-46b8-8a1c-d481d1ccac30 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.fract_y_su"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_75af89e9-bb75-4b11-9fff-1c54832f1065
+:OWLClass_75af89e9-bb75-4b11-9fff-1c54832f1065 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.fract_z"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_758f24a6-8ed3-4c49-bc59-eb76e4ffe4b2
+:OWLClass_758f24a6-8ed3-4c49-bc59-eb76e4ffe4b2 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.fract_z_su"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_ba5b5738-1528-4f1e-a547-55b056de276c
+:OWLClass_ba5b5738-1528-4f1e-a547-55b056de276c rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.label"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_5d25f15c-daaa-4fd1-9ce6-6f4d90c678ae
+:OWLClass_5d25f15c-daaa-4fd1-9ce6-6f4d90c678ae rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.label_component_0"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_9eef2535-621d-41ce-bfb2-b65dccbae55f
+:OWLClass_9eef2535-621d-41ce-bfb2-b65dccbae55f rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.label_component_1"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_71b2d10b-bcdc-45fd-8bc5-138a429345fc
+:OWLClass_71b2d10b-bcdc-45fd-8bc5-138a429345fc rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.label_component_2"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_05a83e21-4635-4ff0-8e00-098930d111cd
+:OWLClass_05a83e21-4635-4ff0-8e00-098930d111cd rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.label_component_3"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_a3aba745-8f29-4eaa-a490-505a995d3d1a
+:OWLClass_a3aba745-8f29-4eaa-a490-505a995d3d1a rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.label_component_4"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_ae9f940a-c777-4bae-88d4-ca305adf6cd8
+:OWLClass_ae9f940a-c777-4bae-88d4-ca305adf6cd8 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.label_component_5"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_1de3a8ee-c404-4cce-82a6-6bced96f695b
+:OWLClass_1de3a8ee-c404-4cce-82a6-6bced96f695b rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.label_component_6"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_18f6fbac-b941-4e03-94a0-4937d126db03
+:OWLClass_18f6fbac-b941-4e03-94a0-4937d126db03 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The fraction of the atom type present at this site. The sum of the occupancies of all the atom types at this site may not significantly exceed 1.0 unless it is a dummy site. The value must lie in the 99.97% Gaussian confidence interval -3u =< x =< 1 + 3u. The _enumeration.range of 0.0:1.0 is thus correctly interpreted as meaning (0.0 - 3u) =< x =< (1.0 + 3u)." ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.occupancy"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_92a27d06-0124-4ff8-9162-24307edbf4b7
+:OWLClass_92a27d06-0124-4ff8-9162-24307edbf4b7 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Standard uncertainty of the fraction of the atom type present at this site." ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.occupancy_su"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_225bc9c2-66dc-4112-b087-25d2b0cd7b6c
+:OWLClass_225bc9c2-66dc-4112-b087-25d2b0cd7b6c rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A concatenated series of single-letter codes which indicate the refinement restraints or constraints applied to this site. This item should not be used. It has been replaced by _atom_site.refinement_flags_posn, _ADP and _occupancy. It is retained in this dictionary only to provide compatibility with legacy CIFs." ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.refinement_flags"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_fb02e5bc-720c-4c2b-b105-0ee84c6dd9d8
+:OWLClass_fb02e5bc-720c-4c2b-b105-0ee84c6dd9d8 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A code which indicates the refinement restraints or constraints applied to the atomic displacement parameters of this site." ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.refinement_flags_ADP"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_e2108aeb-d3c8-4229-b5ba-9a2b3591aa3b
+:OWLClass_e2108aeb-d3c8-4229-b5ba-9a2b3591aa3b rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A code which indicates the refinement restraints or constraints applied to the occupancy of this site." ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.refinement_flags_occupancy"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_87f891f4-49c8-4806-af59-34a4ee0bb8c5
+:OWLClass_87f891f4-49c8-4806-af59-34a4ee0bb8c5 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A code which indicates the refinement restraints or constraints applied to the positional coordinates of this site." ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.refinement_flags_posn"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_a5333ee3-5985-4254-bab6-f38a0c3e9e52
+:OWLClass_a5333ee3-5985-4254-bab6-f38a0c3e9e52 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A description of restraints applied to specific parameters at this site during refinement. See also _atom_site.refinement_flags_* and _refine_ls.number_restraints." ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.restraints"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_8b3d0cf1-6c58-4a17-943b-df1866871270
+:OWLClass_8b3d0cf1-6c58-4a17-943b-df1866871270 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """The number of different sites that are generated by the application of the space-group symmetry to the coordinates given for this site. It is equal to the multiplicity given for this Wyckoff site in International Tables for Cryst. Vol. A (2002). It is equal to the multiplicity of the general position divided by the order of the site symmetry given in _atom_site.site_symmetry_order.
+
+The _atom_site_symmetry_multiplicity form of this data name is deprecated because of historical inconsistencies in practice among structure refinement software packages and should not be used.""" ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.site_symmetry_multiplicity"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_13b16094-186c-4a11-b832-8008b08f8bbe
+:OWLClass_13b16094-186c-4a11-b832-8008b08f8bbe rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The number of times application of the crystallographic symmetry to the coordinates for this site generates the same coordinates. That is: multiplicity of the general position ------------------------------------ _atom_site.site_symmetry_multiplicity" ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.site_symmetry_order"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_8fc7fb06-3b8f-40ac-b116-fc58884586fd
+:OWLClass_8fc7fb06-3b8f-40ac-b116-fc58884586fd rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A code to identify the atom specie(s) occupying this site. This code must match a corresponding _atom_type.symbol. The specification of this code is optional if component_0 of the _atom_site.label is used for this purpose. See _atom_type.symbol." ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.type_symbol"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_34df8d1b-8c5c-4edd-b580-8d1036d73466
+:OWLClass_34df8d1b-8c5c-4edd-b580-8d1036d73466 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """Equivalent isotropic atomic displacement parameter, U(equiv), in angstroms squared, calculated as the geometric mean of the anisotropic atomic displacement parameters.
+
+U(equiv) = (U~i~ U~j~ U~k~)^1/3^
+
+U~n~ = the principal components of the orthogonalised U^ij^""" ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.U_equiv_geom_mean"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_1b0e930e-03c2-4c85-adf4-bfe44c9ff3a4
+:OWLClass_1b0e930e-03c2-4c85-adf4-bfe44c9ff3a4 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Standard uncertainty values (esds) of the U(equiv)." ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.U_equiv_geom_mean_su"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_6a09917f-1d93-44e1-b4bf-e7a661d90ffa
+:OWLClass_6a09917f-1d93-44e1-b4bf-e7a661d90ffa rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """Isotropic atomic displacement parameter, or equivalent isotropic atomic displacement parameter, U(equiv), in angstroms squared, calculated from anisotropic atomic displacement parameters.
+
+U(equiv) = (1/3) sum~i~[sum~j~(U^ij^ a*~i~ a*~j~ a~i~.a~j~)]
+
+a = the real-space cell vectors a* = the reciprocal-space cell lengths Ref: Fischer, R. X. & Tillmanns, E. (1988). Acta Cryst. C44, 775-776.""" ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.U_iso_or_equiv"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_f586e918-353f-4653-aa62-2e274c91ef7f
+:OWLClass_f586e918-353f-4653-aa62-2e274c91ef7f rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Standard uncertainty values (esds) of the U(iso) or U(equiv)." ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.U_iso_or_equiv_su"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_7e68f9ab-682c-4f1a-9d11-a11566f916b4
+:OWLClass_7e68f9ab-682c-4f1a-9d11-a11566f916b4 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The Wyckoff symbol (letter) as listed in the space-group section of International Tables for Crystallography, Vol. A (1987)." ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site.Wyckoff_symbol"@en .
+

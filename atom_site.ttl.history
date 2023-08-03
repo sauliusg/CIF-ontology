@@ -1,0 +1,1 @@
+ 1059  ( set -x; directory-metadata; ./scripts/cifdic2ttl --category atom_site ~/struct/IUCr/COMCIFS/cif_core/cif_core.dic > atom_site.ttl ) &> atom_site.ttl.log

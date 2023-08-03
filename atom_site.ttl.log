@@ -1,0 +1,36 @@
++ directory-metadata
++ whoami
+saulius
++ hostname -f
+starta
++ pwd
+/home/saulius/src/CIF-ontology
++ set +x
++ git remote -v
+origin	git@github.com:sauliusg/domain-crystallography.git (fetch)
+origin	git@github.com:sauliusg/domain-crystallography.git (push)
++ git branch -v
+* cif-data a613566 [ahead 4] Refenerating 'cell.ttl' with the new script that aoutputs header. Now it can be read by 'Protege'.
+  master   936954e Ignoring the generated build/ directory.
++ git status
+On branch cif-data
+Your branch is ahead of 'origin/cif-data' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	atom_site.ttl.log
+
+nothing added to commit but untracked files present (use "git add" to track)
++ df -h .
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/nvme1n1p1  1,9T  935G  847G  53% /home
++ type osname
+osname is /home/saulius/scripts/osname
++ osname
+Linuxmint-20.3
++ uname -a
+Linux starta 5.15.0-78-generic #85~20.04.1-Ubuntu SMP Mon Jul 17 09:42:39 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
++ date
+2023-08-03T12:21:52 EEST
++ ./scripts/cifdic2ttl --category atom_site /home/saulius/struct/IUCr/COMCIFS/cif_core/cif_core.dic
