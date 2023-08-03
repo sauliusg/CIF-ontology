@@ -4,26 +4,25 @@ saulius
 + hostname -f
 starta
 + pwd
-/home/saulius/src/domain-crystallography
+/home/saulius/src/CIF-ontology
 + set +x
 + git remote -v
 origin	git@github.com:sauliusg/domain-crystallography.git (fetch)
 origin	git@github.com:sauliusg/domain-crystallography.git (push)
 + git branch -v
-* cif-data 606b87c [ahead 1] For now, commenting out definition printouts sin this gives .ttl files with incorrect syntax.
+* cif-data 2b440a6 [ahead 3] Deleting old manually generated files.
   master   936954e Ignoring the generated build/ directory.
 + git status
 On branch cif-data
-Your branch is ahead of 'origin/cif-data' by 1 commit.
+Your branch is ahead of 'origin/cif-data' by 3 commits.
   (use "git push" to publish your local commits)
 
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-	cell.ttl
-	cell.ttl.history
-	cell.ttl.log
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   cell.ttl.log
 
-nothing added to commit but untracked files present (use "git add" to track)
+no changes added to commit (use "git add" and/or "git commit -a")
 + df -h .
 Filesystem      Size  Used Avail Use% Mounted on
 /dev/nvme1n1p1  1,9T  935G  847G  53% /home
@@ -34,5 +33,5 @@ Linuxmint-20.3
 + uname -a
 Linux starta 5.15.0-78-generic #85~20.04.1-Ubuntu SMP Mon Jul 17 09:42:39 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
 + date
-2023-08-03T09:54:33 EEST
+2023-08-03T12:19:02 EEST
 + ./scripts/cifdic2ttl --category cell /home/saulius/struct/IUCr/COMCIFS/cif_core/cif_core.dic

@@ -1,260 +1,323 @@
-### http://emmo.info/emmo/cif#OWLClass_b06d726c-e464-42c5-987b-36953476b60d
-:OWLClass_b06d726c-e464-42c5-987b-36953476b60d rdf:type owl:Class ;
+@prefix isq: <http://emmo.info/emmo/middle/isq#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix emmo: <http://emmo.info/emmo#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <http://emmo.info/crystallography/crystallography> .
+
+### http://emmo.info/emmo/cif#OWLClass_f251e494-8b97-484a-a749-b044a4bd39f3
+:OWLClass_f251e494-8b97-484a-a749-b044a4bd39f3 rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.angle_alpha"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_53a3637d-af08-4751-92a0-82d53d2c8c9e
-:OWLClass_53a3637d-af08-4751-92a0-82d53d2c8c9e rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_52e7b9bc-c0dd-4b3a-836b-1952116409a0
+:OWLClass_52e7b9bc-c0dd-4b3a-836b-1952116409a0 rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.angle_alpha_su"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_34296167-c7da-4c16-9aad-7397d34f8dfb
-:OWLClass_34296167-c7da-4c16-9aad-7397d34f8dfb rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_1bd55a0a-0a70-4aec-821b-38451f62355d
+:OWLClass_1bd55a0a-0a70-4aec-821b-38451f62355d rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.angle_beta"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_380e3f7a-443a-4816-b347-9d8505947900
-:OWLClass_380e3f7a-443a-4816-b347-9d8505947900 rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_33f5eff2-f393-4b0b-83ff-2b8fe3b504e0
+:OWLClass_33f5eff2-f393-4b0b-83ff-2b8fe3b504e0 rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.angle_beta_su"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_c5be4761-6b9c-4c9e-ae2e-673fe47a9d0a
-:OWLClass_c5be4761-6b9c-4c9e-ae2e-673fe47a9d0a rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_5e393b25-578c-4cc4-84c2-573c84c14aa0
+:OWLClass_5e393b25-578c-4cc4-84c2-573c84c14aa0 rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.angle_gamma"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_f996bc97-e540-4393-849b-dbae969652d2
-:OWLClass_f996bc97-e540-4393-849b-dbae969652d2 rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_a7a76763-0334-4ac8-946d-b8c11628c19e
+:OWLClass_a7a76763-0334-4ac8-946d-b8c11628c19e rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.angle_gamma_su"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_6e239616-580a-4d8b-a484-2c1d7f1d2ea4
-:OWLClass_6e239616-580a-4d8b-a484-2c1d7f1d2ea4 rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_d31e31f6-91b5-4dce-acfc-be28c921cd88
+:OWLClass_d31e31f6-91b5-4dce-acfc-be28c921cd88 rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atomic mass of the contents of the unit cell. This calculated from the atom sites present in the ATOM_TYPE list, rather than the ATOM_SITE lists of atoms in the refined model." ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.atomic_mass"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_ed061771-93a8-49b1-a3d4-851f3fb587bc
-:OWLClass_ed061771-93a8-49b1-a3d4-851f3fb587bc rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_5e1c2655-e507-4ef9-8b4d-11a32fe22c09
+:OWLClass_5e1c2655-e507-4ef9-8b4d-11a32fe22c09 rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """The reciprocal space matrix for converting the U(ij) matrix of atomic displacement parameters to a dimensionless beta(IJ) matrix. The ADP factor in a structure factor expression:
+
+t = exp - 2π^2^ ( U11 h h a* a* + ...... 2 U23 k l b* c* ) t = exp - 0.25 ( B11 h h a* a* + ...... 2 B23 k l b* c* ) = exp - ( β11 h h + ............ 2 β23 k l )
+
+The conversion of the U or B matrices to the β matrix
+
+β = C U C = C B C /8π^2^
+
+where C is conversion matrix defined here.""" ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.convert_Uij_to_betaij"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_24c0bb3d-092e-4b26-89be-8d531e1b3bbd
-:OWLClass_24c0bb3d-092e-4b26-89be-8d531e1b3bbd rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_52404ea2-1f77-4d47-b604-9c69067266a2
+:OWLClass_52404ea2-1f77-4d47-b604-9c69067266a2 rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Standard uncertainty of _cell.convert_Uij_to_betaij." ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.convert_Uij_to_betaij_su"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_f1733678-61d1-4774-82f1-a2328287e3df
-:OWLClass_f1733678-61d1-4774-82f1-a2328287e3df rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_aba601cd-08b6-4cb8-a380-d3322ceabf7d
+:OWLClass_aba601cd-08b6-4cb8-a380-d3322ceabf7d rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """The reciprocal space matrix for converting the isotropic Uiso atomic displacement parameter to the anisotropic matrix Uij.
+
+| 1 cos(γ*) cos(β*) | U[i,j] = Uiso * | cos(γ*) 1 cos(α*) | | cos(β*) cos(α*) 1 |""" ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.convert_Uiso_to_Uij"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_65ea4b9f-ba61-4a36-9971-08c9c668e75e
-:OWLClass_65ea4b9f-ba61-4a36-9971-08c9c668e75e rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_07815b2f-90fd-47ad-b878-12f2322c002a
+:OWLClass_07815b2f-90fd-47ad-b878-12f2322c002a rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Standard uncertainty of _cell.convert_Uiso_to_Uij." ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.convert_Uiso_to_Uij_su"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_9612e029-d5e3-46eb-89ef-b98b9eccdd62
-:OWLClass_9612e029-d5e3-46eb-89ef-b98b9eccdd62 rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_f462a1ef-fc7f-4a17-a09f-62bca966a524
+:OWLClass_f462a1ef-fc7f-4a17-a09f-62bca966a524 rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A pointer to the diffraction conditions to which this cell has been applied, for example, to locate and extract diffraction peaks. These will normally be the same conditions as those under which the cell was measured, but some legacy data sets may have used a cell measured under differing conditions, in which case those conditions should be indicated using the _cell_measurement.condition_id data item." ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.diffrn_id"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_3b1e5a67-08e2-4bc1-829c-7f5e67759710
-:OWLClass_3b1e5a67-08e2-4bc1-829c-7f5e67759710 rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_b0ff6155-de76-41f0-98af-d8164c0fcd91
+:OWLClass_b0ff6155-de76-41f0-98af-d8164c0fcd91 rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The number of the formula units in the unit cell as specified by _chemical_formula.structural, _chemical_formula.moiety or _chemical_formula.sum." ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.formula_units_Z"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_a3938009-2a5a-418f-a02f-bfc855998806
-:OWLClass_a3938009-2a5a-418f-a02f-bfc855998806 rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_f8b75c1b-4c6e-4b75-b1d5-f924732907aa
+:OWLClass_f8b75c1b-4c6e-4b75-b1d5-f924732907aa rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.length_a"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_f102c198-d081-431f-afca-fcdcfc2eb7be
-:OWLClass_f102c198-d081-431f-afca-fcdcfc2eb7be rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_8cf23b75-0000-4c99-8ee1-610442858dcc
+:OWLClass_8cf23b75-0000-4c99-8ee1-610442858dcc rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.length_a_su"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_77e6a041-2330-4b92-8423-615b96fb27ca
-:OWLClass_77e6a041-2330-4b92-8423-615b96fb27ca rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_4d71e573-dad0-4e93-8c65-e787bce2b508
+:OWLClass_4d71e573-dad0-4e93-8c65-e787bce2b508 rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.length_b"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_93cff9dc-98e4-41e4-b16b-bd051f0fee9b
-:OWLClass_93cff9dc-98e4-41e4-b16b-bd051f0fee9b rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_e54552c3-8b4d-48eb-8cdc-7631572eb89a
+:OWLClass_e54552c3-8b4d-48eb-8cdc-7631572eb89a rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.length_b_su"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_8b79b057-c627-467c-999e-733b9f385882
-:OWLClass_8b79b057-c627-467c-999e-733b9f385882 rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_fade5e61-bca2-4e15-9940-5bf4cda54edb
+:OWLClass_fade5e61-bca2-4e15-9940-5bf4cda54edb rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.length_c"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_8c5093e7-254b-4735-89b8-a77418e89c37
-:OWLClass_8c5093e7-254b-4735-89b8-a77418e89c37 rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_ae57b9c1-02b2-4409-a986-8e93d8013673
+:OWLClass_ae57b9c1-02b2-4409-a986-8e93d8013673 rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.length_c_su"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_3ed80135-e97d-4fe0-ad16-06df03d7d143
-:OWLClass_3ed80135-e97d-4fe0-ad16-06df03d7d143 rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_19a9f3b7-38e4-4608-9154-ab1d0d4d9fc0
+:OWLClass_19a9f3b7-38e4-4608-9154-ab1d0d4d9fc0 rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The direct space (covariant) metric tensor used to transform vectors and coordinates from real (direct) to reciprocal space." ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.metric_tensor"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_19947774-491e-45d6-b633-3bb4e35dad74
-:OWLClass_19947774-491e-45d6-b633-3bb4e35dad74 rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_52fafb2e-9212-473c-99c0-e78931f76a06
+:OWLClass_52fafb2e-9212-473c-99c0-e78931f76a06 rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Orthogonal matrix of the crystal unit cell. Definition uses Rollet's axial assignments with cell vectors a,b,c aligned with orthogonal axes X,Y,Z so that c||Z and b in plane YZ." ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.orthogonal_matrix"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_214b9cdd-2139-48da-bec9-ba84908e8bf4
-:OWLClass_214b9cdd-2139-48da-bec9-ba84908e8bf4 rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_1c3dffb0-d515-4812-91f9-5e694e9679ef
+:OWLClass_1c3dffb0-d515-4812-91f9-5e694e9679ef rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Reciprocal of the angle between _cell.length_b and _cell.length_c. Ref: Buerger, M. J. (1942). X-ray Crystallography, p. 360. New York: John Wiley & Sons Inc." ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.reciprocal_angle_alpha"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_901cc4ab-d32a-476c-8b98-944596e726fe
-:OWLClass_901cc4ab-d32a-476c-8b98-944596e726fe rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_607caa09-2df5-491f-b212-87ca74c6cf6d
+:OWLClass_607caa09-2df5-491f-b212-87ca74c6cf6d rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Standard uncertainty of the reciprocal of the angle between _cell.length_b and _cell.length_c." ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.reciprocal_angle_alpha_su"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_c30719f1-3e0a-4304-a12b-a1701ef01520
-:OWLClass_c30719f1-3e0a-4304-a12b-a1701ef01520 rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_36a28689-acd6-48b5-90f1-79822e8c2012
+:OWLClass_36a28689-acd6-48b5-90f1-79822e8c2012 rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Reciprocal of the angle between _cell.length_a and _cell.length_c. Ref: Buerger, M. J. (1942). X-ray Crystallography, p. 360. New York: John Wiley & Sons Inc." ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.reciprocal_angle_beta"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_8e26a92f-6505-4736-a042-777350c9f3a9
-:OWLClass_8e26a92f-6505-4736-a042-777350c9f3a9 rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_f8613b7a-d88b-4cc1-acef-510eac69b26d
+:OWLClass_f8613b7a-d88b-4cc1-acef-510eac69b26d rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Standard uncertainty of the reciprocal of the angle between _cell.length_a and _cell.length_c." ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.reciprocal_angle_beta_su"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_355aee44-5d7c-4995-a4c5-22a488f06536
-:OWLClass_355aee44-5d7c-4995-a4c5-22a488f06536 rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_6f6eb3e4-04c7-4e09-8ea5-b0e67f9b01cf
+:OWLClass_6f6eb3e4-04c7-4e09-8ea5-b0e67f9b01cf rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Reciprocal of the angle between _cell.length_a and _cell.length_b. Ref: Buerger, M. J. (1942). X-ray Crystallography, p. 360. New York: John Wiley & Sons Inc." ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.reciprocal_angle_gamma"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_653664bb-37a3-4be7-847e-5dee8a5a440d
-:OWLClass_653664bb-37a3-4be7-847e-5dee8a5a440d rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_d1d47d9e-259f-4177-b0a4-715e7be0cc68
+:OWLClass_d1d47d9e-259f-4177-b0a4-715e7be0cc68 rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Standard uncertainty of the reciprocal of the angle between _cell.length_a and _cell.length_b." ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.reciprocal_angle_gamma_su"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_7f997f06-f133-4101-b5ee-70c2187b0dc1
-:OWLClass_7f997f06-f133-4101-b5ee-70c2187b0dc1 rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_4c36c880-f320-4594-81b6-9ea39d763adc
+:OWLClass_4c36c880-f320-4594-81b6-9ea39d763adc rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Reciprocal of the _cell.length_a." ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.reciprocal_length_a"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_977b117b-c3ed-43e9-9fec-8992d2edde5c
-:OWLClass_977b117b-c3ed-43e9-9fec-8992d2edde5c rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_1e48912b-d79c-4394-9548-7cfaac72c127
+:OWLClass_1e48912b-d79c-4394-9548-7cfaac72c127 rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Standard uncertainty of the reciprocal of the _cell.length_a." ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.reciprocal_length_a_su"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_a48f073c-0af7-4720-8abd-78573b311a58
-:OWLClass_a48f073c-0af7-4720-8abd-78573b311a58 rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_2557be3a-cd11-4411-a21a-d6a8a36795a4
+:OWLClass_2557be3a-cd11-4411-a21a-d6a8a36795a4 rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Reciprocal of the _cell.length_b." ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.reciprocal_length_b"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_78b24486-e03a-4add-aa39-08ab36411db5
-:OWLClass_78b24486-e03a-4add-aa39-08ab36411db5 rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_54e9c9fe-64d0-48f4-a49e-28635bb0af18
+:OWLClass_54e9c9fe-64d0-48f4-a49e-28635bb0af18 rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Standard uncertainty of the reciprocal of the _cell.length_b." ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.reciprocal_length_b_su"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_3d0da486-3a79-4103-9abf-91e694969f0e
-:OWLClass_3d0da486-3a79-4103-9abf-91e694969f0e rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_e42b7efb-396c-4ad6-893e-774ce1f9e173
+:OWLClass_e42b7efb-396c-4ad6-893e-774ce1f9e173 rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Reciprocal of the _cell.length_c." ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.reciprocal_length_c"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_aed3d40c-d9a9-42ca-b3d9-a4c45b1085b0
-:OWLClass_aed3d40c-d9a9-42ca-b3d9-a4c45b1085b0 rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_790bed48-c3f1-4669-a702-0f098b3101df
+:OWLClass_790bed48-c3f1-4669-a702-0f098b3101df rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Standard uncertainty of the reciprocal of the _cell.length_c." ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.reciprocal_length_c_su"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_e238f6b6-88b7-42e8-99a5-c45a0f329d23
-:OWLClass_e238f6b6-88b7-42e8-99a5-c45a0f329d23 rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_e58fb746-b6d7-4a8d-bcde-a6159fbde98a
+:OWLClass_e58fb746-b6d7-4a8d-bcde-a6159fbde98a rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The reciprocal (contravariant) metric tensor used to transform vectors and coordinates from reciprocal space to real (direct) space." ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.reciprocal_metric_tensor"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_d84d97e5-edf4-409b-ade5-11b30ada6dce
-:OWLClass_d84d97e5-edf4-409b-ade5-11b30ada6dce rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_c4a188a5-1d00-4ab1-9adf-bc9e1997aefb
+:OWLClass_c4a188a5-1d00-4ab1-9adf-bc9e1997aefb rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Standard uncertainty of _cell.reciprocal_metric_tensor." ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.reciprocal_metric_tensor_su"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_68792744-5cc8-4db3-b6e5-567fa87ea67a
-:OWLClass_68792744-5cc8-4db3-b6e5-567fa87ea67a rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_7d32b8e0-6a1b-44ca-9b10-c72956f47dcb
+:OWLClass_7d32b8e0-6a1b-44ca-9b10-c72956f47dcb rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """Orthogonal matrix of the reciprocal space. The matrix may be used to transform the non-orthogonal vector h = (h,k,l) into the orthogonal indices p = (p,q,r)
+
+M h = p""" ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.reciprocal_orthogonal_matrix"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_414b94b4-9a9f-4474-82af-a8e5fb8fd464
-:OWLClass_414b94b4-9a9f-4474-82af-a8e5fb8fd464 rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_63fb9331-4872-4fee-926f-b0993faea461
+:OWLClass_63fb9331-4872-4fee-926f-b0993faea461 rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Standard uncertainty of _cell.reciprocal_orthogonal_matrix." ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.reciprocal_orthogonal_matrix_su"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_48efffde-6d07-4553-a39a-c2b155b11fc7
-:OWLClass_48efffde-6d07-4553-a39a-c2b155b11fc7 rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_4b54733d-f36b-42e7-9a32-e2745d9d9e65
+:OWLClass_4b54733d-f36b-42e7-9a32-e2745d9d9e65 rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Reciprocal of the _cell.vector_a." ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.reciprocal_vector_a"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_33e3bc66-3005-4169-85f9-95eab7004ac7
-:OWLClass_33e3bc66-3005-4169-85f9-95eab7004ac7 rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_b7196ad4-59d8-40c6-8a69-aefbc0b0538f
+:OWLClass_b7196ad4-59d8-40c6-8a69-aefbc0b0538f rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Standard uncertainty of _cell.reciprocal_vector_a." ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.reciprocal_vector_a_su"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_991376d5-158c-4cc4-80ce-71b5acc9b8ff
-:OWLClass_991376d5-158c-4cc4-80ce-71b5acc9b8ff rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_be3f0c21-a13b-4e58-bc46-92410cf1b92e
+:OWLClass_be3f0c21-a13b-4e58-bc46-92410cf1b92e rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Reciprocal of the _cell.vector_b." ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.reciprocal_vector_b"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_2dd4e184-059f-468a-9a8f-b3675fa5dd67
-:OWLClass_2dd4e184-059f-468a-9a8f-b3675fa5dd67 rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_7043cf50-c115-4f8e-8f7d-a3b64106ce73
+:OWLClass_7043cf50-c115-4f8e-8f7d-a3b64106ce73 rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Standard uncertainty of _cell.reciprocal_vector_b." ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.reciprocal_vector_b_su"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_57d6b866-5535-43a9-b6c1-35c3754acf81
-:OWLClass_57d6b866-5535-43a9-b6c1-35c3754acf81 rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_2204872e-6857-48eb-85e6-86f0bacfc763
+:OWLClass_2204872e-6857-48eb-85e6-86f0bacfc763 rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Reciprocal of the _cell.vector_c." ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.reciprocal_vector_c"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_7e1b39f2-02c4-47ae-99d7-10d068652101
-:OWLClass_7e1b39f2-02c4-47ae-99d7-10d068652101 rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_3ca959e2-074a-4585-ae96-631e1d093a3f
+:OWLClass_3ca959e2-074a-4585-ae96-631e1d093a3f rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Standard uncertainty of _cell.reciprocal_vector_c." ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.reciprocal_vector_c_su"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_27ec4d70-2ba7-46cf-9b54-f6d5c6187743
-:OWLClass_27ec4d70-2ba7-46cf-9b54-f6d5c6187743 rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_051bc18e-44cf-4793-b269-92c4c8002226
+:OWLClass_051bc18e-44cf-4793-b269-92c4c8002226 rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Description of special aspects of the cell choice, noting possible alternative settings." ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.special_details"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_dd27b7a5-2cf6-4118-ac3f-822da9bef528
-:OWLClass_dd27b7a5-2cf6-4118-ac3f-822da9bef528 rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_f264520a-55fb-491c-a370-de9001b21f74
+:OWLClass_f264520a-55fb-491c-a370-de9001b21f74 rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The cell vector along the x axis." ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.vector_a"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_1be6e4f3-ca88-4a68-ad20-bc16c5d1a0be
-:OWLClass_1be6e4f3-ca88-4a68-ad20-bc16c5d1a0be rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_ba15b0c9-c1ce-44e3-abef-04ffdbb01984
+:OWLClass_ba15b0c9-c1ce-44e3-abef-04ffdbb01984 rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Standard uncertainty of _cell.vector_a." ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.vector_a_su"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_df54aec3-4d65-45e5-aa06-1e36d40c7f28
-:OWLClass_df54aec3-4d65-45e5-aa06-1e36d40c7f28 rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_2c20f92f-8454-4db4-b93d-73574d607a0e
+:OWLClass_2c20f92f-8454-4db4-b93d-73574d607a0e rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The cell vector along the y axis." ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.vector_b"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_341a78c5-c219-4f46-befe-d9d5d74cc51b
-:OWLClass_341a78c5-c219-4f46-befe-d9d5d74cc51b rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_9868f103-3055-4a3a-b9aa-3538ef220532
+:OWLClass_9868f103-3055-4a3a-b9aa-3538ef220532 rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Standard uncertainty of _cell.vector_b." ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.vector_b_su"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_2df285fa-38f5-4193-9b48-80c5508d0904
-:OWLClass_2df285fa-38f5-4193-9b48-80c5508d0904 rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_f67033db-7f77-4955-950a-59c4503009b4
+:OWLClass_f67033db-7f77-4955-950a-59c4503009b4 rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The cell vector along the z axis." ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.vector_c"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_af2b73d4-24be-4be5-9c93-73b0a8d3638f
-:OWLClass_af2b73d4-24be-4be5-9c93-73b0a8d3638f rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_b7201e93-fc2f-4544-b30a-b88361bb0cc2
+:OWLClass_b7201e93-fc2f-4544-b30a-b88361bb0cc2 rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Standard uncertainty of _cell.vector_c." ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.vector_c_su"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_2663d812-437b-49bd-90ea-2135f2de9de9
-:OWLClass_2663d812-437b-49bd-90ea-2135f2de9de9 rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_d3d91f7c-bb45-4130-bc9d-7b0be588a5ef
+:OWLClass_d3d91f7c-bb45-4130-bc9d-7b0be588a5ef rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Volume of the crystal unit cell." ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.volume"@en .
 
-### http://emmo.info/emmo/cif#OWLClass_46c20416-08f6-473e-8161-2c8901e008ab
-:OWLClass_46c20416-08f6-473e-8161-2c8901e008ab rdf:type owl:Class ;
+### http://emmo.info/emmo/cif#OWLClass_1672f7fd-a277-4d43-a5f4-1e00c4e2c833
+:OWLClass_1672f7fd-a277-4d43-a5f4-1e00c4e2c833 rdf:type owl:Class ;
                                            rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Standard uncertainty of the volume of the crystal unit cell." ;
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "_cell.volume_su"@en .
 
