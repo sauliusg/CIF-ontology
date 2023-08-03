@@ -8,9 +8,11 @@
 use strict;
 use warnings;
 
-binmode(STDIN,"utf8");
-binmode(STDOUT,"utf8");
-binmode(STDERR,"utf8");
+binmode(STDIN,'utf8');
+binmode(STDOUT,'utf8');
+binmode(STDERR,'utf8');
+
+use open ':utf8';
 
 use FindBin qw($Bin);
 use lib "$Bin/lib/perl5/cif2ttl";
