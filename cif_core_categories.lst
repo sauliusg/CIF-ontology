@@ -1,122 +1,100 @@
-     52 cell
-     52 atom_site
-     46 refine_ls
+     53 cell
+     53 atom_site
+     47 refine_ls
      45 atom_site_aniso
      44 refln
      41 diffrn_refln
      39 atom_type_scat
-     30 chemical
-     29 exptl_crystal
+     33 chemical
+     31 exptl_crystal
+     29 diffrn
      29 atom_sites_fract_transform
-     29 atom_sites_Cartn_transform
+     29 atom_sites_cartn_transform
      27 citation
-     21 diffrn_reflns
+     23 diffrn_reflns
+     22 journal
+     21 reflns
+     19 space_group
      19 model_site
-     18 reflns
-     18 journal
-     18 diffrn
      17 publ_section
-     16 space_group
      16 reflns_shell
      16 geom_hbond
      16 diffrn_orient_refln
-     15 atom_type
+     16 atom_type
      14 geom_torsion
      14 exptl_crystal_face
      12 geom_angle
+     12 exptl
      12 diffrn_source
+     12 cell_measurement
+     12 audit
      11 reflns_class
      11 geom_bond
      11 diffrn_orient_matrix
      11 database_code
-     11 cell_measurement
-     11 DIFFRN
+     10 publication
      10 journal_date
+     10 geom
      10 diffrn_reflns_transf_matrix
-     10 PUBLICATION
+     10 diffrn_radiation
       9 valence_param
       9 publ_author
-      9 diffrn_radiation
       8 refine_ls_class
       8 publ_contact_author
       8 geom_contact
-      8 exptl
+      8 diffrn_standards
       8 diffrn_radiation_wavelength
       8 chemical_formula
       8 atom_analytical
       7 space_group_symop
       7 reflns_scale
+      7 publ
       7 journal_techeditor
       7 journal_coeditor
       7 function
       7 exptl_absorpt
-      7 diffrn_standards
       7 diffrn_reflns_class
       7 diffrn_measurement
       7 computing
       7 chemical_conn_atom
       7 audit_author
       7 atom_analytical_mass_loss
-      7 ATOM
+      7 atom
       6 refine_diff
+      6 cif_core
       6 cell_measurement_refln
       6 audit_support
       6 audit_contact_author
-      6 audit
-      6 PUBL
-      6 CIF_CORE
-      6 AUDIT
-      5 space_group_Wyckoff
+      6 atom_sites
+      5 space_group_wyckoff
       5 publ_body
-      5 geom
       5 display_colour
       5 diffrn_standard_refln
       5 diffrn_detector
       5 database_related
+      5 database
       5 chemical_conn_bond
-      5 GEOM
+      4 publ_manuscript
       4 journal_index
-      4 database
-      4 atom_sites
       4 atom_scat_versus_stol
       4 atom_analytical_source
-      4 JOURNAL
-      4 EXPTL
+      3 refine
       3 publ_requested
       3 publ_manuscript_incl_extra
-      3 publ_manuscript
+      3 model
       3 exptl_crystal_appearance
       3 diffrn_scale_group
       3 diffrn_attenuator
+      3 diffraction
       3 citation_editor
       3 citation_author
       3 audit_conform
       3 audit_author_role
-      3 SPACE_GROUP
-      3 REFLNS
-      3 MODEL
-      3 DIFFRACTION
-      3 CHEMICAL
       2 valence_ref
+      2 valence
+      2 structure
       2 space_group_generator
+      2 diffrn_orient
       2 audit_link
-      2 VALENCE
-      2 STRUCTURE
-      2 REFINE
-      2 EXPTL_CRYSTAL
-      2 DIFFRN_REFLNS
-      2 DIFFRN_ORIENT
-      2 ATOM_SITES
-      1 refine
-      1 publ
-      1 REFINE_LS
-      1 PUBL_MANUSCRIPT
-      1 DISPLAY
-      1 DIFFRN_STANDARDS
-      1 DIFFRN_RADIATION
-      1 DATABASE
-      1 CORE_DIC
-      1 CELL_MEASUREMENT
-      1 CELL
-      1 ATOM_TYPE
-      1 ATOM_SITE
+      1 display
+      1 core_dic
