@@ -35,6 +35,7 @@ my $skos_pref_label = '<http://www.w3.org/2004/02/skos/core#prefLabel>';
 my $rdfs_label = $skos_pref_label;
 
 my $description_name = 'emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9';
+## my $description_name = 'dcterms:abstract';
 
 #* OPTIONS:
 #* --use-rdfs-label
@@ -65,6 +66,20 @@ my $description_name = 'emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9';
         print &get_version_string, "\n"; exit; },
     "--help,--usage" => sub { SUsage::usage(); exit; }
 );
+
+print <<'EOF';
+@prefix isq: <http://emmo.info/emmo/middle/isq#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix emmo: <http://emmo.info/emmo#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <http://emmo.info/crystallography/crystallography> .
+
+EOF
 
 my $spaces = " " x 43;
 
@@ -98,13 +113,13 @@ for my $file (@ARGV) {
                         print "${spaces}rdfs:subClassOf :OWLClass_${parent_class} ;";
                         if( exists $block_data->{description} ) {
                             $block_data->{description} =~ s/"/''/g;
-                            ## if( $block_data->{description} =~ /\n/ ) {
-                            ##     print "${spaces}$description_name " .
-                            ##         "\"\"\"$block_data->{description}\"\"\" ;";
-                            ## } else {
-                            ##     print "${spaces}$description_name " .
-                            ##         "\"$block_data->{description}\" ;";
-                            ## }
+                            if( $block_data->{description} =~ /\n/ ) {
+                                print "${spaces}$description_name " .
+                                    "\"\"\"$block_data->{description}\"\"\" ;";
+                            } else {
+                                print "${spaces}$description_name " .
+                                    "\"$block_data->{description}\" ;";
+                            }
                         }
                         print "${spaces}$rdfs_label \"$block_data->{definition}\"\@en .";
                         print "";
