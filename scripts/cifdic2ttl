@@ -35,7 +35,6 @@ my $skos_pref_label = '<http://www.w3.org/2004/02/skos/core#prefLabel>';
 my $rdfs_label = $skos_pref_label;
 
 my $description_name = 'emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9';
-## my $description_name = 'dcterms:abstract';
 
 #* OPTIONS:
 #* --use-rdfs-label
