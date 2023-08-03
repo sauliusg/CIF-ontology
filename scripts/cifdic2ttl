@@ -98,13 +98,13 @@ for my $file (@ARGV) {
                         print "${spaces}rdfs:subClassOf :OWLClass_${parent_class} ;";
                         if( exists $block_data->{description} ) {
                             $block_data->{description} =~ s/"/''/g;
-                            if( $block_data->{description} =~ /\n/ ) {
-                                print "${spaces}$description_name " .
-                                    "\"\"\"$block_data->{description}\"\"\" ;";
-                            } else {
-                                print "${spaces}$description_name " .
-                                    "\"$block_data->{description}\" ;";
-                            }
+                            ## if( $block_data->{description} =~ /\n/ ) {
+                            ##     print "${spaces}$description_name " .
+                            ##         "\"\"\"$block_data->{description}\"\"\" ;";
+                            ## } else {
+                            ##     print "${spaces}$description_name " .
+                            ##         "\"$block_data->{description}\" ;";
+                            ## }
                         }
                         print "${spaces}$rdfs_label \"$block_data->{definition}\"\@en .";
                         print "";
