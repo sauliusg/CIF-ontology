@@ -1,0 +1,1 @@
+  882  ( set -x; directory-metadata; (cd ~/struct/IUCr/COMCIFS/cif_core/; directory-metadata); grep -F '_name.category_id' ~/struct/IUCr/COMCIFS/cif_core/cif_core.dic | awk '{print $2}' | sort | uniq -c | sort -nr -k1,1 > cif_core_categories.lst ) &> cif_core_categories.lst.log
