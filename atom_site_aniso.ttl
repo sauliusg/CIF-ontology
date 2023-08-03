@@ -1,0 +1,257 @@
+@prefix isq: <http://emmo.info/emmo/middle/isq#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix emmo: <http://emmo.info/emmo#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <http://emmo.info/crystallography/crystallography> .
+
+### http://emmo.info/emmo/cif#OWLClass_9f9cc1b9-e301-4f3f-84d8-ba68ea018cfe
+:OWLClass_9f9cc1b9-e301-4f3f-84d8-ba68ea018cfe rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site_aniso.B_11"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_fb958493-0ceb-4f5f-9856-b621ea256702
+:OWLClass_fb958493-0ceb-4f5f-9856-b621ea256702 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site_aniso.B_11_su"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_125e7a90-714f-4ae4-b0e9-84faa04107c0
+:OWLClass_125e7a90-714f-4ae4-b0e9-84faa04107c0 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site_aniso.B_12"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_c2c3fc85-4034-4759-8e40-c789ec87e47b
+:OWLClass_c2c3fc85-4034-4759-8e40-c789ec87e47b rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site_aniso.B_12_su"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_d49aba06-82a8-4ae2-bf26-bb87984cb73d
+:OWLClass_d49aba06-82a8-4ae2-bf26-bb87984cb73d rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site_aniso.B_13"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_3b5a3748-7d4e-4dec-8925-e923bfc2e117
+:OWLClass_3b5a3748-7d4e-4dec-8925-e923bfc2e117 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site_aniso.B_13_su"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_f9b9b517-1b81-40b8-a34d-e3b9f5c3fc52
+:OWLClass_f9b9b517-1b81-40b8-a34d-e3b9f5c3fc52 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site_aniso.B_22"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_5beedbbc-e8f5-46c4-b7e5-95d2e0bb1d79
+:OWLClass_5beedbbc-e8f5-46c4-b7e5-95d2e0bb1d79 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site_aniso.B_22_su"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_f3f81fbb-47fb-46fe-ad02-799ed0c930a5
+:OWLClass_f3f81fbb-47fb-46fe-ad02-799ed0c930a5 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site_aniso.B_23"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_256ce52a-2020-44bf-9685-305fe95c9cbb
+:OWLClass_256ce52a-2020-44bf-9685-305fe95c9cbb rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site_aniso.B_23_su"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_2ee53172-3a43-4d32-946a-bdff093a1139
+:OWLClass_2ee53172-3a43-4d32-946a-bdff093a1139 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site_aniso.B_33"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_8b22a89d-8af8-4eb2-976b-a75b79979122
+:OWLClass_8b22a89d-8af8-4eb2-976b-a75b79979122 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site_aniso.B_33_su"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_ab71ac82-6ba0-4035-bd5a-6aa868ad3275
+:OWLClass_ab71ac82-6ba0-4035-bd5a-6aa868ad3275 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site_aniso.beta_11"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_8e09644f-424f-47c1-9f9e-d9c56c0c8b56
+:OWLClass_8e09644f-424f-47c1-9f9e-d9c56c0c8b56 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site_aniso.beta_11_su"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_887cb4a5-b045-4915-b996-7b00e376356b
+:OWLClass_887cb4a5-b045-4915-b996-7b00e376356b rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site_aniso.beta_12"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_68a980ce-71fb-475c-8034-1019c59f7a66
+:OWLClass_68a980ce-71fb-475c-8034-1019c59f7a66 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site_aniso.beta_12_su"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_518be357-7e78-4d23-b116-ae7befbefd50
+:OWLClass_518be357-7e78-4d23-b116-ae7befbefd50 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site_aniso.beta_13"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_0e501eb3-ffc9-4564-92c4-ba296ce9010a
+:OWLClass_0e501eb3-ffc9-4564-92c4-ba296ce9010a rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site_aniso.beta_13_su"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_1f8f23ef-d10d-4a01-a18e-48996b47ad05
+:OWLClass_1f8f23ef-d10d-4a01-a18e-48996b47ad05 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site_aniso.beta_22"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_1bc6a172-968b-47e9-894b-e896444544af
+:OWLClass_1bc6a172-968b-47e9-894b-e896444544af rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site_aniso.beta_22_su"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_69be83f9-cb6c-4305-91de-d1b679f470ed
+:OWLClass_69be83f9-cb6c-4305-91de-d1b679f470ed rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site_aniso.beta_23"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_5cb5ffec-6eb4-449f-a1f3-f888c02682ac
+:OWLClass_5cb5ffec-6eb4-449f-a1f3-f888c02682ac rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site_aniso.beta_23_su"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_5f94f38a-c23b-487d-9c43-038a88cd7740
+:OWLClass_5f94f38a-c23b-487d-9c43-038a88cd7740 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site_aniso.beta_33"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_7ab8880f-8f92-4019-9f6a-4117af3c6546
+:OWLClass_7ab8880f-8f92-4019-9f6a-4117af3c6546 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site_aniso.beta_33_su"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_9d265605-1f06-4fad-8fa2-dd83b8daa06d
+:OWLClass_9d265605-1f06-4fad-8fa2-dd83b8daa06d rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Anisotropic atomic displacement parameters are usually looped in a separate list. If this is the case, this code must match the _atom_site.label of the associated atom in the atom coordinate list and conform with the same rules described in _atom_site.label." ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site_aniso.label"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_e699a6af-8046-4e25-a12e-d35f43063bb0
+:OWLClass_e699a6af-8046-4e25-a12e-d35f43063bb0 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The symmetric anisotropic atomic displacement matrix B." ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site_aniso.matrix_B"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_46145020-083e-443b-9da1-4e65fd87510e
+:OWLClass_46145020-083e-443b-9da1-4e65fd87510e rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Standard uncertainty of _atom_site_aniso.matrix_B." ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site_aniso.matrix_B_su"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_3234a9a5-6cfb-41fa-8ad1-f28229950563
+:OWLClass_3234a9a5-6cfb-41fa-8ad1-f28229950563 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """The symmetric anisotropic atomic displacement parameter (ADP) matrix, β, which appears in a structure factor expression.
+
+The contribution of the ADPs to the calculation of the structure factor is given as:
+
+T = exp(-1 * Sum(Sum(β^ij^ * h~i~ * h~j~, j=1:3), i=1:3))
+
+where β^ij^ are the matrix elements, and h~m~ are the Miller indices.
+
+The ADP matrix β, is related to the ADP matrices U and B, as follows:
+
+|a~1~* 0 0 | |t^11^ t^12^ t^13^| |a~1~* 0 0 | β = C * | 0 a~2~* 0 | * |t^12^ t^22^ t^23^| * | 0 a~2~* 0 | | 0 0 a~3~*| |t^13^ t^23^ t^33^| | 0 0 a~3~*|
+
+where C is a constant (2 * π^2^ for U, and 0.25 for B), a~i~* is the length of the respective reciprocal unit cell vector, and t represents the individual anisotropic values, U^ij^ or B^ij^.""" ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site_aniso.matrix_beta"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_0e82d3b6-edd8-4c67-b71f-a2c9a74d2701
+:OWLClass_0e82d3b6-edd8-4c67-b71f-a2c9a74d2701 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Standard uncertainty of _atom_site_aniso.matrix_beta." ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site_aniso.matrix_beta_su"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_a80808e1-7e9d-4e0b-8740-d0573400bce4
+:OWLClass_a80808e1-7e9d-4e0b-8740-d0573400bce4 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The symmetric anisotropic atomic displacement matrix U." ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site_aniso.matrix_U"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_02727092-7fc6-428d-afea-4140256c2f89
+:OWLClass_02727092-7fc6-428d-afea-4140256c2f89 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Standard uncertainty of _atom_site_aniso.matrix_U." ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site_aniso.matrix_U_su"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_d986e1e0-0d7c-469f-9637-c8b0c413f491
+:OWLClass_d986e1e0-0d7c-469f-9637-c8b0c413f491 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Ratio of the maximum to minimum eigenvalues of the atomic displacement ellipsoids." ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site_aniso.ratio"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_d5e273df-04c4-465f-b9fa-c2a24f7ced27
+:OWLClass_d5e273df-04c4-465f-b9fa-c2a24f7ced27 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "This _atom_type.symbol code links the anisotropic atomic displacement parameters to the atom type data associated with this site and must match one of the _atom_type.symbol codes in this list." ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site_aniso.type_symbol"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_91c03bbe-9cb5-42d8-98ab-6f55e47a66be
+:OWLClass_91c03bbe-9cb5-42d8-98ab-6f55e47a66be rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site_aniso.U_11"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_24f88b9b-7137-4e0c-882f-0a026945b451
+:OWLClass_24f88b9b-7137-4e0c-882f-0a026945b451 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site_aniso.U_11_su"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_6e0f5b3c-5df5-4dec-a348-229a35b70b46
+:OWLClass_6e0f5b3c-5df5-4dec-a348-229a35b70b46 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site_aniso.U_12"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_5e02baa0-1f0c-4864-864e-b91e88e85dfb
+:OWLClass_5e02baa0-1f0c-4864-864e-b91e88e85dfb rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site_aniso.U_12_su"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_7713b2de-86e5-4370-8083-b813bc2f722c
+:OWLClass_7713b2de-86e5-4370-8083-b813bc2f722c rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site_aniso.U_13"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_b561dc22-68ed-4ae4-a143-4db8be0e0625
+:OWLClass_b561dc22-68ed-4ae4-a143-4db8be0e0625 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site_aniso.U_13_su"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_d1d374ac-950b-4a45-8d7b-e653a61522f5
+:OWLClass_d1d374ac-950b-4a45-8d7b-e653a61522f5 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site_aniso.U_22"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_78c7b8de-fb34-4475-9179-34f0aedc649c
+:OWLClass_78c7b8de-fb34-4475-9179-34f0aedc649c rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site_aniso.U_22_su"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_77ffc088-d6b3-4601-aad8-717077c9fb9a
+:OWLClass_77ffc088-d6b3-4601-aad8-717077c9fb9a rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site_aniso.U_23"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_ea37856b-eeb3-42ee-a340-21f3d1a00a61
+:OWLClass_ea37856b-eeb3-42ee-a340-21f3d1a00a61 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site_aniso.U_23_su"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_00ddb5a5-8bff-4da0-b736-75cc77b9a012
+:OWLClass_00ddb5a5-8bff-4da0-b736-75cc77b9a012 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site_aniso.U_33"@en .
+
+### http://emmo.info/emmo/cif#OWLClass_8fe75afe-383c-4a76-b408-95ad61f111b6
+:OWLClass_8fe75afe-383c-4a76-b408-95ad61f111b6 rdf:type owl:Class ;
+                                           rdfs:subClassOf :OWLClass_a807a946_94bb_4cba_a433_31daf1d0a94c ;
+                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "_atom_site_aniso.U_33_su"@en .
+

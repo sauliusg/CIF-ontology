@@ -1,0 +1,1 @@
+ 1136  ( set -x; directory-metadata; ./scripts/cifdic2ttl --category atom_site_aniso ~/struct/IUCr/COMCIFS/cif_core/cif_core.dic > atom_site_aniso.ttl ) &> atom_site_aniso.ttl.log
