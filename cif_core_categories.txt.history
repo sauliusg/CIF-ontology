@@ -1,0 +1,1 @@
+  623  ( set -x; directory-metadata; awk '{print $2 " (" $1 ")"}' cif_core_categories.lst > cif_core_categories.txt ) &> cif_core_categories.txt.log

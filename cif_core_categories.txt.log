@@ -1,0 +1,38 @@
++ directory-metadata
++ whoami
+saulius
++ hostname -f
+tasmanijos-velnias
++ pwd
+/home/saulius/src/CIF-ontology
++ set +x
++ git remote -v
+origin	git@github.com:sauliusg/CIF-ontology.git (fetch)
+origin	git@github.com:sauliusg/CIF-ontology.git (push)
++ git branch -v
+* cif-data ac42ebb Adding a TTL file for the 'atom_site_aniso' category.
+  master   936954e Ignoring the generated build/ directory.
++ git status
+On branch cif-data
+Your branch is up to date with 'origin/cif-data'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   crystallography-concepts.rst
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	cif_core_categories.txt.log
+
++ df -h .
+Filesystem                  Size  Used Avail Use% Mounted on
+/dev/mapper/linux--vg-home  3,5T  3,0T  393G  89% /home
++ type osname
+osname is /home/saulius/scripts/osname
++ osname
+Linuxmint-20.1
++ uname -a
+Linux tasmanijos-velnias 5.4.0-164-generic #181-Ubuntu SMP Fri Sep 1 13:41:22 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
++ date
+2023-10-12T09:45:44 EEST
++ awk '{print $2 " (" $1 ")"}' cif_core_categories.lst
