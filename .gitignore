@@ -1,2 +1,14 @@
 *~
 old
+*.egg*
+__pycache__
+*.pyc
+
+.mypy*
+.coverage
+
+*.dic
+*.cif
+
+!test-cif/**/*.cif
+!tests/**/*.dic

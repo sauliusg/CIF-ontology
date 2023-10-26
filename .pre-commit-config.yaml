@@ -1,0 +1,56 @@
+default_language_version:
+  python: python3.7
+
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.4.0
+  hooks:
+  - id: check-symlinks
+  - id: check-xml
+    name: Check XML
+    files: \.(xml|rdf|ttl)$
+  - id: check-yaml
+    name: Check YAML
+  - id: destroyed-symlinks
+  - id: end-of-file-fixer
+    exclude: ^.*(\.ttl|\.cif)$
+  - id: requirements-txt-fixer
+    name: Fix requirements*.txt
+    files: ^.*requirements.*\.txt$
+  - id: trailing-whitespace
+    args: [--markdown-linebreak-ext=md]
+    exclude: ^.*(\.ttl|\.cif)$
+
+- repo: https://github.com/ambv/black
+  rev: 23.3.0
+  hooks:
+  - id: black
+    args:
+      - --config=dic2owl/pyproject.toml
+
+- repo: https://github.com/PyCQA/bandit
+  rev: '1.7.5'
+  hooks:
+  - id: bandit
+    args: [-r]
+    exclude: ^tests/.*$
+    files: ^dic2owl/.*$
+
+- repo: https://github.com/pre-commit/mirrors-mypy
+  rev: v1.5.1
+  hooks:
+  - id: mypy
+    exclude: ^tests/.*$
+    files: ^dic2owl/.*$
+    args: [--config-file, dic2owl/pyproject.toml]
+
+- repo: local
+  hooks:
+  - id: pylint
+    name: pylint
+    entry: pylint
+    language: python
+    types: [python]
+    args: [--rcfile, dic2owl/pyproject.toml]
+    require_serial: true
+    exclude: ^tests/.*$
